@@ -1,0 +1,70 @@
+body {
+font-family: "Ranade", sans-serif;
+background-color: #dad7cd;
+}
+p {
+    font-size: 16px;
+}
+hr {
+    display: block;
+    color: #a3b18a;
+    border-width: 2px;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.sidenav {
+height: 100%;
+width: 160px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #344e41;
+overflow-x: hidden;
+padding-top: 20px;
+}
+
+.sidenav a {
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+text-transform: uppercase;
+padding-right: 20px;
+text-align: right;
+font-size: 25px;
+color: #dad7cd;
+display: block;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.header {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.header img {
+    float: right;
+    padding-left: 20px;
+}
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px
+}
+
+.main {
+margin-left: 160px; /* Same as the width of the sidenav */
+font-size: 28px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
