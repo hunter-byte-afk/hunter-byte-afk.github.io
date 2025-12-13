@@ -1703,8 +1703,26 @@ input, select, textarea {
 						}
 
 		}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.image-grid .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 /* Container */
+	.containerimage {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		padding: 10px;	
+	}
+
 
 	.container {
 		margin: 0 auto;
