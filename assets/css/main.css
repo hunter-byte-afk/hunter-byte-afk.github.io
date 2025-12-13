@@ -1703,11 +1703,20 @@ input, select, textarea {
 						}
 
 		}
+#main {
+	overflow-x: hidden;
+}
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.image-grid .image {
+	display: block;
 }
 
 .image-grid .image img {
