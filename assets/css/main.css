@@ -3389,7 +3389,17 @@ input, select, textarea {
 	.card-content .btn{
 		display: inline-block;
 		padding: 8px 16px;
-		background-color: #333;
+		background-color: #527a5b;
+		text-decoration: none;
+		border-radius: 4px;
+		margin-top: 16px;
+		color: #fff;
+	}
+
+	.play-btn{
+		display: inline-block;
+		padding: 8px 16px;
+		background-color: #527a5b;
 		text-decoration: none;
 		border-radius: 4px;
 		margin-top: 16px;
