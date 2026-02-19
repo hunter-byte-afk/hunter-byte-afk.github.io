@@ -1,137 +1,127 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!--Used clem's base as a starting point: https://codepen.io/celcarpe/pen/VwZrJpj--
+clem had a basic tab set up that I expanded on and kept static for how the tabs look inbetween pages-->
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>J. Renae Hunt</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload header-visible"> 
+<head>
+    <title>Renae Hunt</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">J. Renae Hunt</a></h1>
-					<p>Computer Science Undergraduate <br />
-					at New Mexico State University</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="assets/pdfs/ProjectManager_Renae Hunt.pdf" target="_blank">Resume</a></li>
-						<li><a href="#one" class="active">About</a></li>
-					<!--	<li><a href="#two">Things I Can Do</a></li> -->
-                        <li><a href = "#two">Projects</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-					<!--	<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-                        <li><a href="https://www.linkedin.com/in/renae-hunt-7194611a1/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/hunter-byte-afk" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					<!--	<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
-					</ul>
-				</footer>
-			</section>
+<body>
+  <div class = "container_row">
+    <div class="layer1">
+      <h1 style="padding-left: 40px;">Renae Hunt</h1>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <div class = "layer2">
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Who?</label>
+        <div class="tab">
+          <img style = "float: left; padding-top: 40px; padding-right: 30px;" src="assets/photos/avatar.jpg">
+          <h1>Who am I?</h1>
+          <p>Hello everyone! My name is Renae Hunt and I am an undergraduate at New Mexico State University studying for my B.A. in Computer
+            Science and my minor in art. I am an aspiring game designer that has made small video games in class but one day hope to do something bigger than that.
+            I love experimenting with art and how we can combine that with technology.
+          </p>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Projects</label>
+        
+        <div class="tab">
+          <h1>Projects</h1>
+          <div class = "projectsections">
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.png" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Welcome In!</h2>
-									</header>
-									<p>
-										Hi y'all! I am a Computer Science undergraduate currently attending New Mexico State University with a passion for Game Development and community building. 
-										I love bringing people together through creativity and technology. As President of the Game Development Club and Vice President of the Residence Hall Association, I’m constantly learning, leading, and tackling new challenges alongside an amazing team. Every project I take on brings me one step closer to my goal of creating games that inspire and connect others.
-									</p>
-								</div>
-							</section>
-							<section id="two">
-								<div class="container">
-									<h3 style="margin-bottom: 0%;">Projects</h3>
-									<div class="card-container">
-										<div class="card">
-											<img src="images/HCCImages/Hi_Fi_Gif.gif">
-											<div class="card-meta-info">
-												<i class="fa-solid fa-users"></i>3
-												<i class="far fa-clock"></i>2 Months
-												<i class="fas fa-tools"></i>Electron, JavaScript, HTML, CSS
-											</div>
-											<div class="card-content">
-												<h3>Clock it!</h3>
-												<p style="margin-bottom: 0%;">An application that helps organizations track their members' hours.<br>
-												This app was made to focus on the UX/UI design principles learned in class. The main reason for this application is something simple that organizations can access to track hours without the need for paper sign-in sheets.</p>
-												<a href="clock-it.html" class="btn">Full Project</a>
-											</div>
-										</div>
-										<div class="card">
-											<img src="images/coconut_gif.gif">
-												<div class="card-meta-info">
-													<i class="fa-solid fa-users"></i>4
-													<i class="far fa-clock"></i>2 Weeks
-													<i class="fas fa-tools"></i>Godot 4.4, GDScript
-												</div>
-											<div class="card-content">										
-												<h3>The Coco-nut Crisis (2025 Game Jam)</h3>
-												<h4>Gameplay Programer</h4>
-												<p style="margin-bottom: 0%;">A small 2 player Godot game that was made in two weeks for NMSU Game Development Course.</p>
-												<a href="coconut_crisis.html" class="btn">Read More Here!</a>
-											</div>
-										</div>
-									</div>
-								</div>	
-							</section>
-                        
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p style="padding-bottom: 0px; margin: 0 auto;">If you would like to get in touch or collaborate, don't be afraid to shoot me a message. I'd love to connect</p>
-									<ul>
-										<li>NMSU Email: jrhunt@nmsu.edu</li>
-										<li>renaehunt03@gmail.com</li>
-									</ul>
-			
-								</div>
-							</section>
+            <div class = "project">
+              <h2>Virtute Will Have You.</h2>
+              <div class = "project-content">
+                <div class = "project-text">
+                  <p>This is currently a WIP project that will showcase 3 small steel sculptures made out of scrap found in the NMSU art studio. This is losely inspired by "Plea from a Cat Named Virtute" and 
+                    "Virtute the Cat Explains Her Departure" by The Weakerthans. It is meant to showcase longing for something to change and dealing
+                    with grief from losing a pet. </p>
+                </div>
+                <div class = "project-photo">
+                  <img src = "assets/photos/placeholder_virtute.jpg">            
+                </div>
+              </div>
 
-					</div>
+            </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; J. Renae Hunt. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+            <div class = "project">
+              <h2>untitled.</h2>
+              <div class = "project-content">
+                <div class = "project-text">
+                  <p>This is currently a WIP project that uses 4 x 4 in piece of copper that is reworked into an architectural cuff. The cuff is meant to combine architectural, organic and entomology vibes.</p>
+                </div>
+                <div class = "project-photo">
+                  <img src = "assets/photos/place_holder_untitled.jpg">
+                </div>
+              </div>
+            </div>
 
-			</div>
+            <div class = "project">
+              <h2>The Coco-nut Crisis</h2>
+              <div class = "project-content">
+                <div class = "project-photo full-image">
+                    <a href = "coconutadventure.html" target="_blank">
+                      <img src = "assets/photos/coconut_crisis_intro.gif"> 
+                    </a>
+                </div>
+                <div class = "project-text">
+                  <p>A small 2 player Godot game that was made in two weeks for NMSU Game Development Course for couch co-op. You can play and read more about the game <a href = "coconutadventure.html"> here!</a></p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end of project section -->
+        </div> <!-- end of Project Tab-->
+        
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">What I do</label>
+        <div class="tab">
+          <h1>Skills</h1>
+          <ul>
+            <li>IT Services</li>
+            <li>I can code sometimes</li>
+            <li>MIG Welding</li>
+            <li>Metalworking</li>
+            <li>Funny Jokes</li>
+            <li>Chronic Yapper</li>
+          </ul>
+          <h1>Rewards</h1>
+          <p><b>2nd Place</b> for the Underclassmen division for the <i>NMSU Programming Competition</i> of Fall 2023.</p>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <input type = "radio" name = "tabs" id = "tabfour">
+        <label for = "tabfour">Get in Touch!</label>
+        <div class = "tab">
+          <h1>How to Contact Me!</h1>
+          <ul>
+            <li>jrhunt@nmsu.edu</li>
+          </ul>
+          <h2>Socials</h2>
+          <ul>
+            <li>itch.io: <a href = "https://hunter-byte.itch.io/" target="_blank">hunter-byte-afk </a></li>
+            <li>Instagram: fishing_n_space</li>
+          </ul>
+          <h2>Interested in my Coding Experience?</h2>
+          <p>View my other resume website <a href = "https://hunter-byte-afk.github.io/" target="_blank">here!</a></p>
+        </div>
 
-	</body>
+      </div>
+  </div>
+  <section id = "footer">
+    <div class = "container">
+      <ul class = "copyright">
+        <li>&copy; J. Renae Hunt. All rights reserved.</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+
+
 </html>
